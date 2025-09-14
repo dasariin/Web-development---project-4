@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobby Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>My Hobby Gallery 🎨</h1>
+    <p>Explore my collection of photography, paintings, and memories</p>
+  </header>
+
+  <!-- Gallery Section -->
+  <main>
+    <section class="gallery">
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/400x300/?painting" alt="Painting 1">
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/400x300/?dance" alt="Dance 1">
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/400x300/?photography" alt="Photography">
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/400x300/?sports" alt="Sports">
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/400x300/?art" alt="Art">
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/400x300/?music" alt="Music">
+      </div>
+    </section>
+  </main>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About the Creator</h2>
+    <p>Hello! I’m Indupriya, passionate about creativity and expression through art, dance, and photography. This gallery is a reflection of my hobbies and cherished memories.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formMessage"></p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Hobby Gallery | Designed with ❤</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
