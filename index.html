@@ -3,74 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hobby Gallery</title>
+  <title>Event Hobby Gallery</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>My Hobby Gallery 🎨</h1>
-    <p>Explore my collection of photography, paintings, and memories</p>
+
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Photography Moments</h1>
+    <p>A collection of beautiful memories captured through my lens.</p>
   </header>
 
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="nature">Nature</button>
+    <button class="filter-btn" data-category="people">People</button>
+    <button class="filter-btn" data-category="architecture">Architecture</button>
+  </div>
+
   <!-- Gallery Section -->
-  <main>
-    <section class="gallery">
-      <div class="gallery-item">
-        <img src="https://source.unsplash.com/400x300/?painting" alt="Painting 1">
-      </div>
-      <div class="gallery-item">
-        <img src="https://source.unsplash.com/400x300/?dance" alt="Dance 1">
-      </div>
-      <div class="gallery-item">
-        <img src="https://source.unsplash.com/400x300/?photography" alt="Photography">
-      </div>
-      <div class="gallery-item">
-        <img src="https://source.unsplash.com/400x300/?sports" alt="Sports">
-      </div>
-      <div class="gallery-item">
-        <img src="https://source.unsplash.com/400x300/?art" alt="Art">
-      </div>
-      <div class="gallery-item">
-        <img src="https://source.unsplash.com/400x300/?music" alt="Music">
-      </div>
-    </section>
-  </main>
+  <section class="gallery">
+    <h2>My Gallery</h2>
+    <div class="grid">
+      <figure class="item" data-category="nature"><img src="https://picsum.photos/400/300?random=1" alt="Nature"></figure>
+      <figure class="item" data-category="people"><img src="https://picsum.photos/400/300?random=2" alt="People"></figure>
+      <figure class="item" data-category="architecture"><img src="https://picsum.photos/400/300?random=3" alt="Architecture"></figure>
+      <figure class="item" data-category="nature"><img src="https://picsum.photos/400/300?random=4" alt="Nature"></figure>
+      <figure class="item" data-category="people"><img src="https://picsum.photos/400/300?random=5" alt="People"></figure>
+      <figure class="item" data-category="architecture"><img src="https://picsum.photos/400/300?random=6" alt="Architecture"></figure>
+      <figure class="item" data-category="nature"><img src="https://picsum.photos/400/300?random=7" alt="Nature"></figure>
+      <figure class="item" data-category="people"><img src="https://picsum.photos/400/300?random=8" alt="People"></figure>
+      <figure class="item" data-category="architecture"><img src="https://picsum.photos/400/300?random=9" alt="Architecture"></figure>
+    </div>
+  </section>
 
   <!-- About Section -->
   <section class="about">
-    <h2>About the Creator</h2>
-    <p>Hello! I’m Indupriya, passionate about creativity and expression through art, dance, and photography. This gallery is a reflection of my hobbies and cherished memories.</p>
+    <h2>About the Artist</h2>
+    <p>Hello! I’m Priya, a passionate photographer who loves to capture moments of joy, nature, and creativity. Through this gallery, I want to share my world of colors and emotions.</p>
   </section>
 
   <!-- Contact Section -->
   <section class="contact">
     <h2>Contact Me</h2>
-    <form id="contactForm">
+    <form>
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
-    <p id="formMessage"></p>
     <div class="socials">
-      <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
   </section>
 
-  <!-- Lightbox Modal -->
-  <div id="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
-  </div>
-
   <footer>
-    <p>&copy; 2025 Hobby Gallery | Designed with ❤</p>
+    <p>&copy; 2025 Photography Moments | Designed by Priya</p>
   </footer>
 
   <script src="script.js"></script>
